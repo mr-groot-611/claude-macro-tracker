@@ -4,6 +4,16 @@ This file is read when the User Profile database doesn't exist or when `onboardi
 
 ---
 
+## Phase 0: Verify Notion connection
+
+Before doing anything else, attempt a simple Notion MCP call (e.g., search for a page). If the call fails or the Notion tools are unavailable, **stop onboarding immediately** and tell the user:
+
+> "I can't reach Notion — it looks like the Notion connector isn't set up yet. You can connect it here: https://claude.com/connectors/notion — once that's done, come back and we'll pick up right where we left off."
+
+Do not proceed to Phase 1 until this check passes.
+
+---
+
 ## Phase 1: Database creation
 
 Create all 8 Notion databases using the Notion MCP's create-database tool. Use these exact names:
