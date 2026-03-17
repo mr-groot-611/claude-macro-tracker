@@ -28,19 +28,12 @@ Eight Notion databases store everything: User Profile, Recipe Library, Batch Log
 - **Notion account** (free plan works fine)
 - **Notion MCP** connected to Claude ([setup guide](https://claude.com/connectors/notion))
 
-## Setup — Plugin (easy path)
+## Setup
 
-1. Download `claude-macro-tracker.plugin` from [Releases](https://github.com/mr-groot-611/claude-macro-tracker/releases)
-2. Install the plugin in Claude
-3. Make sure Notion MCP is connected
-4. Start a conversation — say something like "I want to start tracking my meals" and Claude handles onboarding
-
-## Setup — Manual
-
-1. Clone this repo: `git clone https://github.com/mr-groot-611/claude-macro-tracker.git`
-2. Copy the `skills/macro-tracker/` folder to your Claude skills directory
-3. Make sure Notion MCP is connected
-4. Start a conversation — Claude detects the skill and runs onboarding automatically
+1. Download `macro-tracker-skill.zip` from [Releases](https://github.com/mr-groot-611/claude-macro-tracker/releases)
+2. In Claude Desktop, go to **Customize → Skills → + → Upload a skill** and select the zip file
+3. Make sure Notion MCP is connected ([setup guide](https://claude.com/connectors/notion))
+4. Start a conversation on desktop or mobile — say something like "I want to start tracking my meals" and Claude handles onboarding
 
 ## What happens on first run
 
