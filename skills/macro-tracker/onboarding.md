@@ -205,6 +205,14 @@ If the databases already exist (user re-runs onboarding):
 
 Run this as a conversation, not a form. Ask in natural groups. If the user volunteers information early (e.g., mentions their weight while describing their goal), absorb it without re-asking.
 
+### How to ask questions
+
+Use the AskUserQuestion tool for any question that has a clear set of options (goal type, unit preference, activity level, dietary type). This is especially important on mobile where typing is slower — tapping a choice is much easier. Use plain text conversation only for open-ended questions where the user needs to type freely (body stats, foods they avoid, cooking habits). Be consistent — don't switch between methods mid-interview.
+
+### Date formatting
+
+When creating any Notion entries that include dates (Daily Budget, Weekly Budget, Batch Log, etc.), always format the title/name column dates as `YYYY/MM/DD (Day)` — for example `2026/03/18 (Tue)`. This sorts correctly in Notion views even without explicit sorting configured.
+
 ### Group 1: Goal
 "What are you looking to do — lose weight, maintain, or build muscle?"
 

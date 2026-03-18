@@ -149,8 +149,8 @@ Run this sequence every time the skill triggers:
 4. **Extract database IDs.** Parse the `database_ids` field (JSON map) to get Notion IDs for all other databases. All subsequent queries use these IDs directly — no name-based searches.
 
 5. **Fetch core context** using the stored IDs:
-   - **Today's Daily Budget:** Filter by today's date. If no entry exists, create one using the baseline `target_daily_calories` and macro targets from the User Profile.
-   - **This week's Weekly Budget:** Determine the current week's start date using the profile's `week_start_day`. Filter by that date. If no entry exists, create one with target = daily target × 7. Also create Daily Budget entries for each day of the week with baseline targets.
+   - **Today's Daily Budget:** Filter by today's date. If no entry exists, create one using the baseline `target_daily_calories` and macro targets from the User Profile. Use `YYYY/MM/DD (Day)` format for the title (e.g., "2026/03/18 (Tue)") — this sorts correctly in Notion.
+   - **This week's Weekly Budget:** Determine the current week's start date using the profile's `week_start_day`. Filter by that date. If no entry exists, create one with target = daily target × 7. Also create Daily Budget entries for each day of the week with baseline targets, using the same date title format.
    - **Today's Meal Log entries:** Filter by today's date.
 
 6. **Recalculate actuals.** Sum today's Meal Log entries to compute actual calories and macros for today's Daily Budget. Never trust stored actual values — always recompute. This handles manual Notion edits gracefully.
