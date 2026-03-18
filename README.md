@@ -31,7 +31,7 @@ Eight Notion databases store everything: User Profile, Recipe Library, Batch Log
 ## Setup
 
 1. Connect Notion to Claude ([setup guide](https://claude.com/connectors/notion)) — the skill needs this to store your data
-2. Download `macro-tracker-skill.zip` from [Releases](https://github.com/mr-groot-611/claude-macro-tracker/releases)
+2. Download `macro-tracker-skill.zip` from [Releases](https://github.com/varun-atul/claude-macro-tracker/releases)
    > **Note:** If your browser automatically unzips the file (common in Safari), right-click the download link and choose **"Download Linked File"** instead.
 3. In Claude Desktop, go to **Customize → Skills → + → Upload a skill** and select the zip file
 4. Start a conversation on desktop or mobile — say something like "I want to start tracking my meals" and Claude handles onboarding
